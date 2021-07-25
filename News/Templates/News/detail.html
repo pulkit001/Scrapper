@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ok</title>
+  </head>
+  <link rel="stylesheet" href="{% static "News/index.css" %}">
+  <body>
+    <div class="boxes">
+
+      <div class="box ">
+        <h2>{{Title}}</h2>
+          <br>
+          <h4>{{Content}}</h4>
+{% for item in Data %}
+    <p>{{item}}</p>
+    {% endfor %}
+  </div>
+</div>
+  </body>
+</html>
